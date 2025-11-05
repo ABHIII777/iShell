@@ -25,6 +25,12 @@ fn main() {
             "dir -c" => {
                 current_directory();
             }
+            
+            _ if line.contains("cd ") => {
+                let dir = line.strip_prefix("cd ").unwrap().trim();
+                env::set_current_dir(dir);
+            }
+
             "clear" => {
                 let _ = Command::new("clear").status().unwrap();
             }
