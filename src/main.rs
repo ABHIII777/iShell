@@ -31,6 +31,11 @@ fn main() {
                 env::set_current_dir(dir);
             }
 
+            _ if line.contains("change directory to ") => {
+                let dir = line.strip_prefix("change directory to ").unwrap().trim();
+                env::set_current_dir(dir);
+            }
+
             "clear" => {
                 let _ = Command::new("clear").status().unwrap();
             }
