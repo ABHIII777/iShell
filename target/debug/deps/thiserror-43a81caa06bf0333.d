@@ -1,0 +1,14 @@
+/Users/abhipatel/Documents/Developer/iShell/target/debug/deps/thiserror-43a81caa06bf0333.d: /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/lib.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/aserror.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/display.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/var.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/private.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/thiserror-83c7ec73a31cd1e9/out/private.rs
+
+/Users/abhipatel/Documents/Developer/iShell/target/debug/deps/libthiserror-43a81caa06bf0333.rlib: /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/lib.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/aserror.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/display.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/var.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/private.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/thiserror-83c7ec73a31cd1e9/out/private.rs
+
+/Users/abhipatel/Documents/Developer/iShell/target/debug/deps/libthiserror-43a81caa06bf0333.rmeta: /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/lib.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/aserror.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/display.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/var.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/private.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/thiserror-83c7ec73a31cd1e9/out/private.rs
+
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/lib.rs:
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/aserror.rs:
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/display.rs:
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/var.rs:
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/private.rs:
+/Users/abhipatel/Documents/Developer/iShell/target/debug/build/thiserror-83c7ec73a31cd1e9/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/abhipatel/Documents/Developer/iShell/target/debug/build/thiserror-83c7ec73a31cd1e9/out

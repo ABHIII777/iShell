@@ -1,0 +1,14 @@
+/Users/abhipatel/Documents/Developer/iShell/target/debug/deps/serde-d742cf662482d5dd.d: /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/serde-6c1bb92b74e54916/out/private.rs
+
+/Users/abhipatel/Documents/Developer/iShell/target/debug/deps/libserde-d742cf662482d5dd.rlib: /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/serde-6c1bb92b74e54916/out/private.rs
+
+/Users/abhipatel/Documents/Developer/iShell/target/debug/deps/libserde-d742cf662482d5dd.rmeta: /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/serde-6c1bb92b74e54916/out/private.rs
+
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/abhipatel/Documents/Developer/iShell/target/debug/build/serde-6c1bb92b74e54916/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/abhipatel/Documents/Developer/iShell/target/debug/build/serde-6c1bb92b74e54916/out

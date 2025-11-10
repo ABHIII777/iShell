@@ -6,3 +6,7 @@ edition = "2024"
 [dependencies]
 prettytable = "0.10"
 colored = "3.0.0"
+nu-table = "0.108.0"
+nu-ansi-term = "0.50.3"
+tabled = "0.20.0"
+owo-colors = "4.2.3"

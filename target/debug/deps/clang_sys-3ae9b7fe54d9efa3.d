@@ -1,0 +1,14 @@
+/Users/abhipatel/Documents/Developer/iShell/target/debug/deps/clang_sys-3ae9b7fe54d9efa3.d: /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/macros.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/common.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/dynamic.rs
+
+/Users/abhipatel/Documents/Developer/iShell/target/debug/deps/libclang_sys-3ae9b7fe54d9efa3.rlib: /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/macros.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/common.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/dynamic.rs
+
+/Users/abhipatel/Documents/Developer/iShell/target/debug/deps/libclang_sys-3ae9b7fe54d9efa3.rmeta: /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs /Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/macros.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/common.rs /Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/dynamic.rs
+
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs:
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs:
+/Users/abhipatel/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs:
+/Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/macros.rs:
+/Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/common.rs:
+/Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out/dynamic.rs:
+
+# env-dep:OUT_DIR=/Users/abhipatel/Documents/Developer/iShell/target/debug/build/clang-sys-18fa84f9faf017bd/out
