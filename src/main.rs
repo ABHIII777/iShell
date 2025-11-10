@@ -56,10 +56,6 @@ fn lsl_command() {
             .map(|g| g.name().to_string_lossy().into_owned())
             .unwrap_or("unknown".into());
 
-        //if meta.is_symlink() {
-        //   let target = fs::read_link(entry.path()).unwrap();
-        //}
-        //
         let mut target = String::new();
         if meta.file_type().is_symlink() {
             target = fs::read_link(entries.path())
@@ -118,16 +114,37 @@ fn tabled_directory() {
         let meta = entries.metadata().unwrap();
 
         let filename = entries.file_name().to_str().unwrap().to_string();
+
+        let main_file_name = if meta.is_dir() {
+            filename.green().bold().to_string()
+        } else {
+            filename.white().to_string()
+        };
+
         let size = meta.len().to_string();
         let file_type = if meta.is_dir() { "Dir" } else { "File" };
 
-        builder.push_record([filename, file_type.to_string(), size]);
+        builder.push_record([main_file_name, file_type.to_string(), size]);
     }
 
     let mut table = builder.build();
     let main_table = table.with(tabled::settings::Style::modern()).with(tabled::settings::Alignment::left());
 
     println!("{}", main_table);
+}
+
+fn make_dir(name: &str) {
+    match fs::create_dir(name) {
+        Ok(_) => println!("A new directory is created named: {}", name),
+        Err(e) => eprintln!("An error occured while creating new directory {}", e),
+    }
+}
+
+fn remove_dir(name: &str) {
+    match fs::remove_dir(name) {
+        Ok(_) => println!("The directory is removed. "),
+        Err(e) => eprintln!("An error occured during removing the directory. {}", e),
+    }
 }
 
 fn main() {
@@ -157,6 +174,16 @@ fn main() {
 
             "ls -l" => {
                 lsl_command();
+            }
+
+            _ if line.contains("mkdir ") => {
+                let dir = line.strip_prefix("mkdir ").unwrap().trim();
+                make_dir(dir);
+            }
+
+            _ if line.contains("rmdir ") => {
+                let dir = line.strip_prefix("rmdir ").unwrap().trim();
+                remove_dir(dir);
             }
 
             _ if line.contains("cd ") => {
