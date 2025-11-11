@@ -14,21 +14,38 @@ fn current_directory() {
     }
 }
 
+fn mode_format(num: &u32) -> String {
+    let mut str = String::new();
+
+    str.push(if num & 0o400 != 0 { 'r' } else { '-' });
+    str.push(if num & 0o200 != 0 { 'w' } else { '-' });
+    str.push(if num & 0o100 != 0 { 'x' } else { '-' });
+
+    str.push(if num & 0o040 != 0 { 'r' } else { '-' });
+    str.push(if num & 0o020 != 0 { 'w' } else { '-' });
+    str.push(if num & 0o010 != 0 { 'x' } else { '-' });
+
+    str.push(if num & 0o004 != 0 { 'r' } else { '-' });
+    str.push(if num & 0o002 != 0 { 'w' } else { '-' });
+    str.push(if num & 0o001 != 0 { 'x' } else { '-' });
+
+    str
+}
 
 fn lsl_command() {
     let mut builder = Builder::new();
 
     builder.push_record([
-        "Name".green().bold().to_string(),
-        "Type".green().bold().to_string(),
-        "Target".green().bold().to_string(),
-        "Read Only".green().bold().to_string(),
-        "Mode".green().bold().to_string(),
-        "Num Links".green().bold().to_string(),
-        "Inode".green().bold().to_string(),
-        "User".green().bold().to_string(),
-        "Group".green().bold().to_string(),
-        "Size".green().bold().to_string(),
+        "Name".cyan().bold().to_string(),
+        "Type".cyan().bold().to_string(),
+        "Target".cyan().bold().to_string(),
+        "Read Only".cyan().bold().to_string(),
+        "Mode".cyan().bold().to_string(),
+        "Num Links".cyan().bold().to_string(),
+        "Inode".cyan().bold().to_string(),
+        "User".cyan().bold().to_string(),
+        "Group".cyan().bold().to_string(),
+        "Size".cyan().bold().to_string(),
     ]);
 
     for entry in fs::read_dir(".").unwrap() {
@@ -44,9 +61,11 @@ fn lsl_command() {
         let gid = meta.gid();
         
         let num_links = meta.nlink();
-        let mode = meta.mode();
+        // let mode = meta.mode().to_string();
+        let mode = mode_format(&meta.mode());
 
         let read_only = meta.permissions().readonly();
+
 
         let user = get_user_by_uid(uid)
             .map(|u| u.name().to_string_lossy().into_owned())
@@ -56,6 +75,12 @@ fn lsl_command() {
             .map(|g| g.name().to_string_lossy().into_owned())
             .unwrap_or("unknown".into());
 
+        let main_file_name = if meta.is_dir() {
+            filename.green().bold().to_string()
+        } else {
+            filename.white().to_string()
+        };
+
         let mut target = String::new();
         if meta.file_type().is_symlink() {
             target = fs::read_link(entries.path())
@@ -64,7 +89,7 @@ fn lsl_command() {
                 .into_owned();
         }
 
-        builder.push_record([filename, file_type.to_string(), target, read_only.to_string(), mode.to_string(), num_links.to_string(), inode.to_string(), user, group, size.to_string()]);
+        builder.push_record([main_file_name, file_type.to_string(), target, read_only.to_string(), mode.to_string(), num_links.to_string(), inode.to_string(), user, group, size.to_string()]);
     }
 
     let mut table = builder.build();
@@ -87,11 +112,18 @@ fn lsa_command() {
         let entries = entry.unwrap();
         let meta = entries.metadata().unwrap();
 
-        let filename = entries.file_name().to_str().unwrap().to_string();
         let size = meta.len().to_string();
         let file_type = if meta.is_dir() { "Dir" } else { "File" };
 
-        builder.push_record([filename, file_type.to_string(), size]);
+        let filename = entries.file_name().to_str().unwrap().to_string();
+        
+        let main_file_name = if meta.is_dir() {
+            filename.green().bold().to_string()
+        } else {
+            filename.white().to_string()
+        };
+
+        builder.push_record([main_file_name, file_type.to_string(), size]);
     }
 
     let mut table = builder.build();
